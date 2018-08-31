@@ -35,7 +35,9 @@ android  简单快速调用本地相机和相册获取照片的工具库，基�
 5.直接调用获取系统拍照或相册的照片
 
    （1）. //不裁剪返回系统相机或相册的bitmap
+   
          //SimpleNativePhotoHelper.FROM_ALBUM     获取图库图片
+	 
          simpleNativePhotoHelper.choicePhoto(SimpleNativePhotoHelper.FROM_CAMERA, imgPath,onSelectedPhotoListener);
    
    （2）.裁剪返回系统相机或相册的bitmap
