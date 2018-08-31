@@ -46,6 +46,7 @@ android  简单快速调用本地相机和相册获取照片的工具库，适�
         @Override
         public void onSelectPhotoCancle() {
 
+
         }
     };
    
