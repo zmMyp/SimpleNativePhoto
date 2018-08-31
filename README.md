@@ -2,12 +2,18 @@
 android  简单快速调用本地相机和相册获取照片的工具库，适配各版本
 
 1.在工程总gradle中配置
+
   allprojects {
+  
       repositories {
+      
         ...
         maven { url 'https://jitpack.io' }
+	
       }
+      
     }
+    
   
  2.在app的gradle中导入库
   dependencies {
