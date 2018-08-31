@@ -1,5 +1,7 @@
 # SimpleNativePhoto
-android  简单快速调用本地相机和相册获取照片的工具库，适配各版本
+android  简单快速调用本地相机和相册获取照片的工具库，基本适配各版本
+
+不需要麻烦地在onActivityResult中处理各种问题，喜欢的给星，谢啦
 
 1.在工程总gradle中配置
 
@@ -27,6 +29,7 @@ android  简单快速调用本地相机和相册获取照片的工具库，适�
  
  4.初始化工具类
  
+ 
   SimpleNativePhotoHelper simpleNativePhotoHelper=SimpleNativePhotoHelper.getPhotoHelperInstance(this);
   
 5.直接调用获取系统拍照或相册的照片
@@ -40,7 +43,7 @@ android  简单快速调用本地相机和相册获取照片的工具库，适�
         //创建一个裁剪尺寸，前两个参数是比例，后面是保存图片文件的大小
 	
          SimpleNativePhotoCropParam  simpleNativePhotoCropParam= new SimpleNativePhotoCropParam(1,2,100,200);
-         simpleNativePhotoHelper.choicePhoto(SimpleNativePhotoHelper.FROM_CAMERA, imgPath,onSelectedPhotoListener,simpleNativePhotoCropParam);
+            simpleNativePhotoHelper.choicePhoto(SimpleNativePhotoHelper.FROM_CAMERA,imgPath,onSelectedPhotoListener,simpleNativePhotoCropParam);
  
  
  注意 不穿图片路径是不会保存图片的，只返回bitmap 
